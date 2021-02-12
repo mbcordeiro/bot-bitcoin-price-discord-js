@@ -14,8 +14,8 @@ bot.on('ready', () => console.log('ok'))
 
 btcValue.setApiKey(apiKeyBtcValue)
 
-bot.on('message', () => {
-    if (message.author.equal(bot.user)) return
+bot.on('message', message => {
+    if (message.author.equals(bot.user)) return
     if(message.content == '!btc') {
         btcValue().then(value => {
             btcValue.getPercentageChangeLastDay().then(percentage => {
