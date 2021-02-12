@@ -1,0 +1,13 @@
+{
+  "name": "bot-bitcoin-discord",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "btc-value": "^3.0.1",
+    "discord.js": "^12.5.1"
+  }
+}
